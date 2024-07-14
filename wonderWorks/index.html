@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Estilo Bootstrap -->
+     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" /> 
+    <!-- Estilo propio -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <title>WonderWork Studio</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand fst-italic" href="#">WW Studio</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5
+              class="offcanvas-title custom-color-green"
+              id="offcanvasNavbarLabel"
+            >
+              WW Studio
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#equipo">Equipo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#trabajos">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section mb-5" id="inicio">
+      <div
+        class="container d-flex align-items-center justify-content-end text-white flex-column fondo"
+      >
+        <h1 class="fs-1 text-center pb-2">¡Bienvenido a WonderWork Studio!</h1>
+        <h2 class="fs-4 text-center pb-5">
+          Donde la imaginación cobra vida y la fantasía se hace realidad.
+        </h2>
+      </div>
+    </section>
+    <!-- Section Nosotros -->
+    <section id="nosotros">
+      <div class="container pb-5">
+        <div class="text-center">
+          <h2 class="text-uppercase custom-color-green pt-3">Sobre Nosotros</h2>
+          <h3 class="text-muted pb-5">"Donde la imaginación cobra vida"</h3>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x custom-color-green"></i>
+              <i class="fas fa-palette fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-4">Experiencia Creativa</h4>
+            <p class="fst-italic">
+              La imaginación es nuestro motor! Convierte tus ideas en realidad
+              junto a un equipo apasionado que desafía los límites de lo
+              posible.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x custom-color-green"></i>
+              <i class="fas fa-medal fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-4">Compromiso con la Calidad</h4>
+            <p class="fst-italic">
+              En cada píxel y detalle, nos esforzamos por la excelencia.
+              Descubre el estándar de calidad que define nuestra obra en
+              WonderWork Studio.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x custom-color-green"></i>
+              <i class="fas fa-handshake fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-4">Colaboración Proactiva</h4>
+            <p class="fst-italic">
+              Juntos, hacemos magia. En WonderWork Studio, tu visión es nuestra
+              inspiración. ¡Trabajemos juntos para crear algo extraordinario!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Equipo -->
+    <div class="animation-section position-relative" id="equipo">
+      <div class="animation-container">
+        <div class="animation-hex"></div>
+        <div class="animation-bg"></div>
+        <div class="row container-fluid">
+          <!--Texts-->
+          <div class="col-12 text-center animation-form pt-5">
+            <h2 class="text-uppercase h1 custom-text-green pb-5">
+              Nuestro Equipo
+            </h2>
+          </div>
+          <div class="col-12 col-md-4 px-5 pb-5 border-radius-card">
+            <div
+              class="card border-0 rounded-5 animation-form animation-form-hover border-dark d-flex justify-content-center align-items-center text-center"
+            >
+              <img
+                src="./img/Equipo1.jpeg"
+                class="card-img-top rounded-top-4"
+                alt="..."
+              />
+              <div class="card-body bg-dark rounded-bottom-4">
+                <p class="card-text text-white">
+                   Colaboración, creatividad y compromiso: los pilares de nuestro
+                  equipo en WonderWork Studio para acompañerte en todos tus proyectos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 px-5 pb-5 border-radius-card">
+            <div
+              class="card border-0 rounded-5 animation-form animation-form-hover border-dark d-flex justify-content-center align-items-center text-center"
+            >
+              <img
+                src="./img/Equipo2.jpeg"
+                class="card-img-top rounded-top-4"
+                alt="..."
+              />
+              <div class="card-body bg-dark rounded-bottom-4">
+                <p class="card-text text-white">
+                  Conoce a nuestro equipo creativo y a nuestros talentosos
+                  programadores, dedicados a hacer realidad tus ideas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 px-5 pb-5 border-radius-card">
+            <div
+              class="card border-0 rounded-5 animation-form animation-form-hover border-dark d-flex justify-content-center align-items-center text-center"
+            >
+              <img
+                src="./img/Equipo3.jpeg"
+                class="card-img-top rounded-top-4"
+                alt="..."
+              />
+              <div class="card-body bg-dark rounded-bottom-4">
+                <p class="card-text text-white">
+                  Descubre al equipo detrás de la magia: artistas y diseñadores
+                  dedicados a crear experiencias extraordinarias.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section Trabajos -->
+    <section class="container-fluid py-5" id="trabajos">
+      <div class="row justify-content-center">
+        <!--Texts-->
+        <div class="col-12 text-center">
+          <h2 class="text-uppercase h1 custom-text-green">Nuestros Trabajos</h2>
+          <h3
+            class="text-capitalize fst-italic py-2 text-secondary h4 mb-4 mb-md-0"
+          >
+            "La magia del diseño creativo"
+          </h3>
+          <!-- <p class="text-dark">
+            En WonderWorks Studio, llevamos la imaginación a la vida a través de nuestros proyectos creativos. Desde mundos mágicos hasta personajes memorables, nuestro equipo se dedica a crear experiencias extraordinarias que cautivan y emocionan a nuestro público. Únete a nosotros en un viaje hacia lo inimaginable, donde cada detalle cuenta una historia única.
+          </p> -->
+        </div>
+        <!-- Slider -->
+        <div class="wrapper py-5 d-none d-md-flex">
+          <div class="container-slider">
+            <input type="radio" name="slide" id="c1" checked />
+            <label for="c1" class="card-slider">
+              <div class="row-slider">
+                <div class="icon-slider">1</div>
+                <div class="description-slider">
+                  <h4>Avatar</h4>
+                </div>
+              </div>
+            </label>
+            <input type="radio" name="slide" id="c2" />
+            <label for="c2" class="card-slider">
+              <div class="row-slider">
+                <div class="icon-slider">2</div>
+                <div class="description-slider">
+                  <h4>El Castillo Ambulante</h4>
+                </div>
+              </div>
+            </label>
+            <input type="radio" name="slide" id="c3" />
+            <label for="c3" class="card-slider">
+              <div class="row-slider">
+                <div class="icon-slider">3</div>
+                <div class="description-slider">
+                  <h4>The Witcher 3: Wild Hunt</h4>
+                </div>
+              </div>
+            </label>
+            <input type="radio" name="slide" id="c4" />
+            <label for="c4" class="card-slider">
+              <div class="row-slider">
+                <div class="icon-slider">4</div>
+                <div class="description-slider">
+                  <h4>The Legend of Zelda</h4>
+                </div>
+              </div>
+            </label>
+            <input type="radio" name="slide" id="c5" />
+            <label for="c5" class="card-slider">
+              <div class="row-slider">
+                <div class="icon-slider">5</div>
+                <div class="description-slider">
+                  <h4>Howgarts Legacy</h4>
+                </div>
+              </div>
+            </label>
+            <input type="radio" name="slide" id="c6" />
+            <label for="c6" class="card-slider">
+              <div class="row-slider">
+                <div class="icon-slider">6</div>
+                <div class="description-slider">
+                  <h4>Coco</h4>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <!-- Cards Mobile-->
+        <div class="row d-md-none">
+          <!--Cards-->
+          <!--Card #1-->
+          <article class="col-12 mb-3">
+            <div class="card">
+              <img
+                src="./img/Avatar.jpg"
+                alt=""
+                class="card-img"
+                style="height: 20rem"
+              />
+              <div
+                class="card-img-overlay text-white d-flex flex-column justify-content-end"
+              >
+                <h4 class="text-start fs-2">Avatar</h4>
+              </div>
+            </div>
+          </article>
+          <!--Card #2-->
+          <article class="col-12 mb-3">
+            <div class="card">
+              <img
+                src="./img/Castillo.jpeg"
+                alt=""
+                class="card-img"
+                style="height: 20rem"
+              />
+              <div
+                class="card-img-overlay text-white d-flex flex-column justify-content-end"
+              >
+                <h4 class="text-start fs-2">El Castillo Ambulante</h4>
+              </div>
+            </div>
+          </article>
+          <!--Card #3-->
+          <article class="col-12 mb-3">
+            <div class="card">
+              <img
+                src="./img/TheWitcher.jpg"
+                alt=""
+                class="card-img"
+                style="height: 20rem"
+              />
+              <div
+                class="card-img-overlay text-white d-flex flex-column justify-content-end"
+              >
+                <h4 class="text-start fs-2">The Witcher 3: Wild Hunt</h4>
+              </div>
+            </div>
+          </article>
+          <!--Card #4-->
+          <article class="col-12 mb-3">
+            <div class="card">
+              <img
+                src="./img/Zelda.jpg"
+                alt=""
+                class="card-img"
+                style="height: 20rem"
+              />
+              <div
+                class="card-img-overlay text-white d-flex flex-column justify-content-end"
+              >
+                <h4 class="text-start fs-2">The Legend of Zelda</h4>
+              </div>
+            </div>
+          </article>
+          <!--Card #5-->
+          <article class="col-12 mb-3">
+            <div class="card">
+              <img
+                src="./img/Hogwarts.jpg"
+                alt=""
+                class="card-img"
+                style="height: 20rem"
+              />
+              <div
+                class="card-img-overlay text-white d-flex flex-column justify-content-end"
+              >
+                <h4 class="text-start fs-2">Howgarts Legacy</h4>
+              </div>
+            </div>
+          </article>
+          <!--Card #6-->
+          <article class="col-12">
+            <div class="card">
+              <img
+                src="./img/Coco.jpg"
+                alt=""
+                class="card-img"
+                style="height: 20rem"
+              />
+              <div
+                class="card-img-overlay text-white d-flex flex-column justify-content-end"
+              >
+                <h4 class="text-start fs-2">Coco</h4>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Section Contacto -->
+    <section class="contact-section pt-5" id="contacto">
+      <div class="container py-3 px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6 text-center">
+            <h2 class="custom-text-green fs-1 py-3">Contacto</h2>
+
+            <p class="text-white h5 mb-5 fst-italic">
+              "¿Listo para hacer realidad tu visión creativa? En WonderWork
+              Studio, transformamos tus ideas en obras maestras. ¡Contáctanos
+              hoy mismo y descubre cómo podemos dar vida a tus sueños
+              creativos!"
+            </p>
+          </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+          <div class="col-lg-6">
+            <form
+              method="post"
+              action="mensaje.php"
+              id="contactForm"
+              class="needs-validation fs-5"
+              novalidate
+            >
+              <!-- Name input-->
+              <div class="mb-3">
+                <input
+                  class="form-control fs-5 p-3"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Nombre Completo"
+                  required
+                  pattern="^[\p{L}\s]{1,50}$"
+                  maxlength="50"
+                  title="Ingresa un nombre válido"
+                />
+                <div class="invalid-feedback fs-5">
+                  Ingresa un nombre válido
+                </div>
+              </div>
+              <!-- Email address input-->
+              <div class="mb-3">
+                <input
+                  class="form-control fs-5 p-3"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Correo Electrónico"
+                  required
+                  pattern="^.+@[^.@]+\..+$"
+                  maxlength="50"
+                  title="Ingresa un correo electrónico válido"
+                />
+                <div class="invalid-feedback fs-5">
+                  Ingresa un correo electrónico válido
+                </div>
+              </div>
+              <!-- Phone number input-->
+              <div class="input-group input-group-lg mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-lg"
+                  >+56</span
+                >
+                <input
+                  class="form-control fs-5 p-3 rounded-end"
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Número Telefónico"
+                  required
+                  pattern="\d{9}"
+                  title="Ingresa un número de teléfono válido"
+                  maxlength="9"
+                />
+                <div class="invalid-feedback fs-5">
+                  Ingresa un número de teléfono válido
+                </div>
+              </div>
+
+              <!-- Message input-->
+              <div class="mb-3" style="position: relative">
+                <textarea
+                  class="form-control fs-5 mb-3"
+                  id="message"
+                  type="text"
+                  name="message"
+                  placeholder="Mensaje"
+                  style="height: 15rem"
+                  required
+                  maxlength="200"
+                  oninput="contadorCaracteres(this, 'charCount')"
+                ></textarea>
+                <div class="invalid-feedback fs-5"></div>
+                <div
+                  id="charCount"
+                  style="
+                    position: absolute;
+                    bottom: 5px;
+                    left: 5px;
+                    color: gray;
+                    font-size: 18px;
+                    padding-left: 8px;
+                  "
+                >
+                  0 / 200
+                </div>
+                <!-- Contador de caracteres dentro del textarea -->
+              </div>
+              <!-- Submit Button-->
+              <div class="d-grid">
+                <button
+                  class="btn btn-success btn-xl text-white fs-5 p-2"
+                  id="submitButton"
+                  type="submit"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modal de mensajes -->
+    <div
+      class="modal fade"
+      id="messageModal"
+      tabindex="-1"
+      aria-labelledby="messageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="messageModalLabel">Registro</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="messageContent"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-light text-dark pt-5 pb-4">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 font-weight-bold custom-color-footer"
+            >
+              Nosotros
+            </h5>
+            <hr class="mb-4" />
+            <p class="fst-italic">
+              "En WonderWork Studio, creemos en el poder de la imaginación para
+              inspirar y conectar"
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 font-weight-bold custom-color-footer"
+            >
+              Equipo
+            </h5>
+            <hr class="mb-4" />
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-dark text-decoration-none hover-footer"
+                  >Tus mensajes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none hover-footer"
+                  >Trabajos</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none hover-footer"
+                  >Ayuda</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5
+              class="text-uppercase mb-4 font-weight-bold custom-color-footer"
+            >
+              Contacto
+            </h5>
+            <hr class="mb-4" />
+            <ul class="list-unstyled">
+              <li><i class="fas fa-home me-3"></i>Chile, Santiago</li>
+              <li><i class="fas fa-envelope me-3"></i>WWStudio@gmail.com</li>
+              <li><i class="fas fa-phone me-3"></i>+56 965452415</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="mb-4" />
+
+        <div class="text-center mb-2">
+          <p>Copyright todos los derechos reservados</p>
+        </div>
+
+        <div class="text-center">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="icon-hover-footer"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="icon-hover-footer"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="icon-hover-footer"
+                ><i class="fab fa-google-plus"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="icon-hover-footer"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="list-inline-item icon-hover-footer">
+              <a href="#" class="icon-hover-footer"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- CDN Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--    CDN AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <!-- <script src="./bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
